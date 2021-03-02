@@ -203,7 +203,7 @@ const Index = () => {
                     <div className="project-desc">
                         <h3 className="project-heading">Covid Statistics</h3>
                         <p className="project-description">COVID-19 has been spreading around the world for a long time now so when I was thinking about what API should I look for, this was the first thing that came to my mind. Simply because this topic is really popular (not in the good way) and this may be helpful for me or other people, I decided to create a COVID-19 Statistics web app. I called an API with latest updates for Coronavirus data, fetched them and implemented on my web page. Also, this website was fully developed in NextJS. Feel free to go ahead and check out my API Calls project.</p>
-                        <button className="visit-button"><a className="button-a" href="https://covidstatistics.online/" target="_blank">Visit Website</a></button>
+                        <a className="button-a" href="https://covidstatistics.online/" target="_blank"><button className="visit-button">Visit Website</button></a>
                     </div>
                 </div>
 
@@ -211,7 +211,7 @@ const Index = () => {
                     <div className="project-desc">
                         <h3 className="project-heading">Techwicki</h3>
                         <p className="project-description">Techwicki.com is an educational website providing articles on various technical topics. I built this web page using NextJS and fully optimized its SEO to try and reach best rankings on Google Search. I have been collecting knowledge for some time to be able to write all articles on TechWicki by myself. As of right now, I am trying to come up with even more interesting topics to improve my web page as much as I can. Feel free to check out TechWicki and read through some articles, there is always something new to learn.</p>
-                        <button className="visit-button"><a className="button-a" href="https://techwicki.com/" target="_blank">Visit Website</a></button>
+                        <a className="button-a" href="https://techwicki.com/" target="_blank"><button className="visit-button">Visit Website</button></a>
                     </div>
                     <div className="project-picture">
                         <div className="project-image-container">
@@ -241,7 +241,7 @@ const Index = () => {
                     <div className="project-desc">
                         <h3 className="project-heading">E-shop template</h3>
                         <p className="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas, diam non convallis efficitur, ante tellus dignissim libero, nec semper ex felis quis leo. Nullam consequat elit ante, id tristique lacus eleifend vel. Etiam pharetra vel mauris et sollicitudin. Ut scelerisque finibus velit sit amet condimentum. Integer lectus mi, feugiat non quam sed, sodales dictum enim. Donec faucibus luctus nisl, in viverra nisi consectetur feugiat. Integer egestas magna nec tempus posuere. Donec id purus vehicula ipsum viverra facilisis sed a ipsum. Proin eget quam lorem. Ut dictum hendrerit justo. Suspendisse non nisi et neque consequat pharetra nec sed enim. Donec.</p>
-                        <button className="visit-button"><a className="button-a" href="https://simon-ugor.github.io/eshoptemplate20/" target="_blank">Visit Website</a></button>
+                        <a className="button-a" href="https://simon-ugor.github.io/eshoptemplate20/" target="_blank"><button className="visit-button">Visit Website</button></a>
                     </div>
                 </div>
 
@@ -249,7 +249,7 @@ const Index = () => {
                     <div className="project-desc">
                         <h3 className="project-heading">Colden lyrics</h3>
                         <p className="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas, diam non convallis efficitur, ante tellus dignissim libero, nec semper ex felis quis leo. Nullam consequat elit ante, id tristique lacus eleifend vel. Etiam pharetra vel mauris et sollicitudin. Ut scelerisque finibus velit sit amet condimentum. Integer lectus mi, feugiat non quam sed, sodales dictum enim. Donec faucibus luctus nisl, in viverra nisi consectetur feugiat. Integer egestas magna nec tempus posuere. Donec id purus vehicula ipsum viverra facilisis sed a ipsum. Proin eget quam lorem. Ut dictum hendrerit justo. Suspendisse non nisi et neque consequat pharetra nec sed enim. Donec.</p>
-                        <button className="visit-button"><a className="button-a" href="https://coldenlyrics.com/" target="_blank">Visit Website</a></button>
+                        <a className="button-a" href="https://coldenlyrics.com/" target="_blank"><button className="visit-button">Visit Website</button></a>
                     </div>
                     <div className="project-picture">
                         <div className="project-image-container">
