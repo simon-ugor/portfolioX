@@ -1,9 +1,20 @@
 
 import Image from "next/image"
 import { Link } from "react-scroll";
+import emailjs from "emailjs-com"
 
 const Index = () => {
 
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_xhpiebu', 'template_n2xgap7', e.target, 'user_3mYfrOcpDiD2jB1VinkuJ')
+          .then((result) => {
+            alert("Success")
+          }, (error) => {
+            alert("Error")
+          });
+          e.target.reset()
+    }
 
     return (
         <div>
@@ -130,7 +141,15 @@ const Index = () => {
                         ><p className="menu-p">About Me</p>
                     </Link>
                 
-                    <p className="menu-p">My CV</p>
+                    <Link
+                        activeClass="active"
+                        to="contact-me-div"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={700}
+                        ><p className="menu-p">Contact Me</p>
+                    </Link>
                 </div>
             </div>
             <div className="experience-div">
@@ -270,9 +289,46 @@ const Index = () => {
             <div className="about-me-div">
                 <h2 className="my-experience">About Me</h2>
                 <p style={{color: "black", textAlign: "center", marginTop: "3vh"}} className="project-description">My name is Šimon Ugor and I am currently studying Informatics in Krems and der Donau, Austria. Since the beginning of Covid19 I study from home, Slovakia, meaning I have a lot more time for self-studies. I decided to focus on Web Development simply because that was what I enjoyed the most. Started with the basics of HTML, CSS and Javascript, ended up diving into ReactJS framework and really enjoying it.</p><br/>
-                <p style={{color: "black", textAlign: "center", marginTop: "1vh"}} className="project-description">I am currently looking for a real-world working experience and trying my best to find a job in this field. You can find more information about me in my CV which you can download in My CV section. I created this website fully from scratch using ReactJS and some more really interesting technologies. If you are interested in looking into the code of my portfolio or any other app included, feel free to contact me and I will provide anything you need.</p>
-                <button className="contact-me-button">Contact Me</button>
+                <p style={{color: "black", textAlign: "center", marginTop: "1vh", marginBottom: "2vh"}} className="project-description">I am currently looking for a real-world working experience and trying my best to find a job in this field. You can find more information about me in my CV which you can download in My CV section. I created this website fully from scratch using ReactJS and some more really interesting technologies. If you are interested in looking into the code of my portfolio or any other app included, feel free to contact me and I will provide anything you need.</p>
             </div>
+
+            <div className="contact-me-div">
+                <h2 style={{marginBottom: "3vh"}} className="my-work">Contact Me</h2>
+                <form className="contact-form" onSubmit={sendEmail}>
+                    <input className="contact-input" type="textbox" name="name" placeholder="Name/Company"></input>
+                    <input className="contact-input" type="textbox" name="email" placeholder="Email"></input>
+                    <input className="contact-input" type="textbox" name="subject" placeholder="Subject"></input>
+                    <textarea className="contact-textarea" name="text" placeholder="Text"></textarea>
+                    <button className="send-button">Send</button>
+                </form>
+                <div className="social-media-div">
+                    <div className="social-media-img-container">
+                    <a href="https://www.linkedin.com/in/simonugor/" target="_blank">
+                        <Image
+                            src="/linkedin.png"
+                            alt="linkedin"
+                            width={32}
+                            height={32}
+                            className="social-media-img"
+                        />
+                    </a>
+                    <a href="https://github.com/simon-ugor" target="_blank">
+                        <Image
+                            src="/github.png"
+                            alt="linkedin"
+                            width={32}
+                            height={32}
+                            className="social-media-img"
+                        />
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="copyright-div">
+                <p className="copyright-p">Copyright &#xA9; 2021 | Šimon Ugor</p>
+            </div>
+                
             </div>
 
 

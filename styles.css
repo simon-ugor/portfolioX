@@ -372,18 +372,102 @@
 
 .about-me-div {
     width: 100vw;
-    height: 50vh;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact-me-button {
-    border: 2px solid #6C63FF;
-    background-color: white;
-    color: #6C63FF;
-    margin-top: 3.5vh;
+/* Contact me */
+
+.contact-me-div {
+    width: 100vw;
+    background-color: #6C63FF;
+    height: 80vh;
+}
+
+.social-media-div {
+    width: 100vw;
+    height: 10vh;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-img {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.social-media-img-container {
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-input {
+    width: 60vw;
+    height: 4vh;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #6C63FF;
+    margin-bottom: 1.5vh;
+    font-family: basic;
+    font-size: 2vh;
+    padding-left: 1vh;
+    color: white;
+}
+
+.contact-input::placeholder {
+    color: gainsboro;
+}
+
+.contact-input:focus {
+    background-color: #9e99fa;
+}
+
+.contact-textarea {
+    width: 60vw;
+    max-width: 60vw;
+    min-width: 60vw;
+    height: 23vh;
+    max-height: 23vh;
+    min-height: 23vh;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #6C63FF;
+    margin-bottom: 1vh;
+    font-family: basic;
+    font-size: 2vh;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    color: white;
+}
+
+.contact-textarea::placeholder {
+    color: gainsboro;
+}
+
+.contact-textarea:focus {
+    background-color: #9e99fa;
+}
+
+.send-button {
+    border: 3px solid white;
+    background-color: #6C63FF;
+    color: white;
+    margin-top: 1.5vh;
     width: 13vw;
     height: 6vh;
     outline: none;
@@ -393,8 +477,26 @@
     cursor: pointer;
 }
 
-.contact-me-button:hover {
+.send-button:hover {
     background-color: #9e99fa;
+}
+
+/* Copyright div */
+
+.copyright-div {
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-p {
+    font-family: basic;
+    font-size: 1.3vw;
+    color: #6C63FF;
+    margin-top: 0.2vh;
 }
 
 /* Media Queries */
