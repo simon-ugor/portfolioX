@@ -116,7 +116,7 @@ const Index = () => {
                         to="experience-div"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-10}
                         duration={700}
                         ><p className="menu-p">My experience</p>
                     </Link>
@@ -140,7 +140,7 @@ const Index = () => {
                         duration={700}
                         ><p className="menu-p">About Me</p>
                     </Link>
-                
+
                     <Link
                         activeClass="active"
                         to="contact-me-div"
@@ -150,6 +150,8 @@ const Index = () => {
                         duration={700}
                         ><p className="menu-p">Contact Me</p>
                     </Link>
+                
+                    
                 </div>
             </div>
             <div className="experience-div">
@@ -259,7 +261,7 @@ const Index = () => {
                     </div>
                     <div className="project-desc">
                         <h3 className="project-heading">E-shop template</h3>
-                        <p className="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas, diam non convallis efficitur, ante tellus dignissim libero, nec semper ex felis quis leo. Nullam consequat elit ante, id tristique lacus eleifend vel. Etiam pharetra vel mauris et sollicitudin. Ut scelerisque finibus velit sit amet condimentum. Integer lectus mi, feugiat non quam sed, sodales dictum enim. Donec faucibus luctus nisl, in viverra nisi consectetur feugiat. Integer egestas magna nec tempus posuere. Donec id purus vehicula ipsum viverra facilisis sed a ipsum. Proin eget quam lorem. Ut dictum hendrerit justo. Suspendisse non nisi et neque consequat pharetra nec sed enim. Donec.</p>
+                        <p className="project-description">Simple, universal, reusable and customizable e-shop template that can be used basically for any product and company. Please note this only front-end template and some features are not implemented. If you are interested in viewing my e-shop template, simply click the button below.</p>
                         <a className="button-a" href="https://simon-ugor.github.io/eshoptemplate20/" target="_blank"><button className="visit-button">Visit Website</button></a>
                     </div>
                 </div>
@@ -267,7 +269,7 @@ const Index = () => {
                 <div className="project-div">
                     <div className="project-desc">
                         <h3 className="project-heading">Colden lyrics</h3>
-                        <p className="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas, diam non convallis efficitur, ante tellus dignissim libero, nec semper ex felis quis leo. Nullam consequat elit ante, id tristique lacus eleifend vel. Etiam pharetra vel mauris et sollicitudin. Ut scelerisque finibus velit sit amet condimentum. Integer lectus mi, feugiat non quam sed, sodales dictum enim. Donec faucibus luctus nisl, in viverra nisi consectetur feugiat. Integer egestas magna nec tempus posuere. Donec id purus vehicula ipsum viverra facilisis sed a ipsum. Proin eget quam lorem. Ut dictum hendrerit justo. Suspendisse non nisi et neque consequat pharetra nec sed enim. Donec.</p>
+                        <p className="project-description">Colden Lyrics is a web page containing over 1 000 different song lyrics (text) from various artists. Web scraped using Python and Selenium, implemented with NextJS server-side rendering to improve Google SEO. If this sounds interesting, feel free to click the button below and have a look at Colden Lyrics web page.</p>
                         <a className="button-a" href="https://coldenlyrics.com/" target="_blank"><button className="visit-button">Visit Website</button></a>
                     </div>
                     <div className="project-picture">
@@ -287,9 +289,35 @@ const Index = () => {
             </div>
 
             <div className="about-me-div">
-                <h2 className="my-experience">About Me</h2>
-                <p style={{color: "black", textAlign: "center", marginTop: "3vh"}} className="project-description">My name is Šimon Ugor and I am currently studying Informatics in Krems and der Donau, Austria. Since the beginning of Covid19 I study from home, Slovakia, meaning I have a lot more time for self-studies. I decided to focus on Web Development simply because that was what I enjoyed the most. Started with the basics of HTML, CSS and Javascript, ended up diving into ReactJS framework and really enjoying it.</p><br/>
-                <p style={{color: "black", textAlign: "center", marginTop: "1vh", marginBottom: "2vh"}} className="project-description">I am currently looking for a real-world working experience and trying my best to find a job in this field. You can find more information about me in my CV which you can download in My CV section. I created this website fully from scratch using ReactJS and some more really interesting technologies. If you are interested in looking into the code of my portfolio or any other app included, feel free to contact me and I will provide anything you need.</p>
+                <h2 className="my-experience" style={{marginBottom: "2vh"}}>About Me</h2>
+                <div className="about-me-container">
+
+                    <div className="studies">
+                        <div>
+                            <Image
+                                src="/study.png"
+                                alt="Study"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <h3 className="list-heading" style={{marginBottom: "2vh"}}>Studies</h3>
+                        <p className="work-text">Graduated at bilingual Business Academy in English and German in my hometown Trnava, Slovakia. Currently studying in 4th semester of Informatics at IMC FH Krems in Krems, Austria.</p>
+                    </div>
+
+                    <div className="work">
+                        <div>
+                            <Image
+                                src="/workwork.png"
+                                alt="Study"
+                                width={64}
+                                height={64}
+                            />
+                        </div>
+                        <h3 className="list-heading" style={{marginBottom: "2vh"}}>Work</h3>
+                        <p className="work-text">Currently looking for work, open to all suitable opportunities. If you are interested to work with me, feel free to contact me <Link activeClass="active" to="contact-me-div" spy={true} smooth={true} offset={0} duration={700}><span style={{cursor: "pointer", textDecoration: "underline"}}>here</span></Link>. In the meantime freelancing, developing cheap but professional web pages to gain as many real-world experience as possible.</p>
+                    </div>
+                </div>
             </div>
 
             <div className="contact-me-div">
