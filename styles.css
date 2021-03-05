@@ -219,6 +219,7 @@ body {
 /* Menu div */
 
 .menu-div {
+    display: none;
     position: absolute;
     width: 50vw;
     height: 10vh;
@@ -234,8 +235,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    transform: translate3d(100%, 0, 0);
-    animation: slideinright 0.5s linear 3.5s 1 normal forwards;
+    
 }
 
 .menu-p {
