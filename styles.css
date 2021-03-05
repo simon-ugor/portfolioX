@@ -182,6 +182,7 @@ body {
 /* Scroll down div */
 
 .scroll-down-div {
+    opacity: 0;
     position: absolute;
     z-index: 10;
     height: 7vh;
@@ -192,8 +193,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate3d(0, 100%, 0);
-    animation: slideinup 0.5s linear 3.5s 1 normal forwards;
+    animation: normalfadein 0.75s linear 0.2s 1 normal forwards;
 }
 
 .scroll-down-child {
@@ -219,7 +219,7 @@ body {
 /* Menu div */
 
 .menu-div {
-    display: none;
+    opacity: 0;
     position: absolute;
     width: 50vw;
     height: 10vh;
@@ -235,7 +235,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
+    animation: normalfadein 0.75s linear 0.2s 1 normal forwards;
 }
 
 .menu-p {
