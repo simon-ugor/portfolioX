@@ -16,6 +16,11 @@
     src: url(./fonts/medium.ttf);
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* Top div - svg */
 
 .top-main-div {
@@ -550,10 +555,12 @@
 .mobile-top-div {
     width: 100vw;
     height: 100vh;
-    background-color: azure;
+    background-color: #6C63FF;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: basic;
+    color: white;
 }
 
 

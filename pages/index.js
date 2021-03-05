@@ -95,7 +95,7 @@ const Index = () => {
                 </div>
                 <div className="top-right-div">
                     <h1 className="my-name">Šimon Ugor</h1>
-                    <h2 className="about-me">Not your everyday front-end developer</h2>
+                    <h2 className="about-me">Not your everyday web developer</h2>
                 </div>
                 <div className="scroll-down-div">
                     <div className="scroll-down-child">
