@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { Link } from "react-scroll";
 import emailjs from "emailjs-com"
+import Head from "next/head"
 
 const Index = () => {
 
@@ -17,7 +18,12 @@ const Index = () => {
     }
 
     return (
+    
         <div>
+            <Head>
+                <title>My Portfolio</title>
+                <meta name="description" content="My Portfolio web page created by Šimon Ugor" />
+            </Head>
             <div className="desktop-div">
             <div className="top-main-div">
                 <div className="top-left-div">
