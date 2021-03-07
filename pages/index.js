@@ -9,7 +9,8 @@ const Index = () => {
 
     useEffect(() => {
 
-        setInterval(() => {
+        const away = () => {
+            //console.log("away")
             setSquareIconRightHigh("square-icon-right-high-away")
             setTopIconSecond("top-icon-second-away")
             setBigIconSecond("big-icon-second-away")
@@ -22,9 +23,10 @@ const Index = () => {
             setsmallIconLeft("small-icon-left-away")
             setSquareIconLeft("square-icon-left-away")
             setSmallIconRight("small-icon-right-away")
-        }, 4500)
+        }
 
-        setInterval(() => {
+        const back = () => {
+            //console.log("back")
             setSquareIconRightHigh("square-icon-right-high")
             setTopIconSecond("top-icon-second")
             setBigIconSecond("big-icon-second")
@@ -37,7 +39,21 @@ const Index = () => {
             setsmallIconLeft("small-icon-left")
             setSquareIconLeft("square-icon-left")
             setSmallIconRight("small-icon-right")
-        }, 9000)
+        }
+
+        setTimeout(() => {
+            away()
+            setTimeout(() => {
+                back()
+            }, 4500)
+        }, 4500)
+
+        setTimeout(() => {
+            away()
+            setTimeout(() => {
+                back()
+            }, 4500)
+        }, 13500)
 
 
 
