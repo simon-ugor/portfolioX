@@ -134,17 +134,73 @@ body {
     animation: normalfadein 0.75s linear 0.2s 1 normal forwards;
 }
 
+#square-icon-right-high-away {
+    animation: fadeout 0.75s linear 0s 1 normal forwards;
+}
+
+#top-icon-second-away {
+    animation: fadeout 0.75s linear 0.25s 1 normal forwards;
+}
+
+#big-icon-second-away {
+    animation: fadeout 0.75s linear 0.5s 1 normal forwards;
+}
+
+#square-icon-right-away {
+    animation: fadeout 0.75s linear 0.75s 1 normal forwards;
+}
+
+#small-icon-left-high-away {
+    animation: fadeout 0.75s linear 1s 1 normal forwards;   
+}
+
+#square-icon-left-high-away {
+    animation: fadeout 0.75s linear 1.25s 1 normal forwards;  
+}
+
+#top-icon-first-away {
+    animation: fadeout 0.75s linear 1.5s 1 normal forwards;  
+}
+
+#biggest-icon-first-away {
+    animation: fadeout 0.75s linear 1.75s 1 normal forwards;  
+}
+
+#small-icon-right-high-away {
+    animation: fadeout 0.75s linear 2s 1 normal forwards;
+}
+
+#small-icon-left-away {
+    animation: fadeout 0.75s linear 2.25s 1 normal forwards;
+}
+
+#square-icon-left-away {
+    animation: fadeout 0.75s linear 2.5s 1 normal forwards;
+}
+
+#small-icon-right-away {
+    animation: fadeout 0.75s linear 2.75s 1 normal forwards;
+}
+
 /* Keyframes */
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
 
 @keyframes fadein {
     0% {
         opacity: 0;
-        transform: translate3d(0, -100%, 0);
     }
 
     100% {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
     }
 }
 
