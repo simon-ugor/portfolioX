@@ -27,7 +27,7 @@ const Index = () => {
             <div className="desktop-div">
             <div className="top-main-div">
                 <div className="top-left-div">
-                    <svg className="svg" width="338" height="707" viewBox="0 0 338 707" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="svg" width="100%" height="95%" viewBox="0 0 338 707" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="undraw_insert_block_re_4t4l 1" clipPath="url(#clip0)">
                         <path id="phone" d="M336 196.921H332.326V96.26C332.326 80.8085 326.188 65.9898 315.262 55.064C304.336 44.1381 289.518 38 274.066 38H60.802C45.3505 38 30.5318 44.1381 19.606 55.064C8.68009 65.9898 2.54199 80.8085 2.54199 96.26V648.494C2.54199 663.946 8.68009 678.764 19.606 689.69C30.5318 700.616 45.3505 706.754 60.802 706.754H274.066C289.518 706.754 304.336 700.616 315.262 689.69C326.188 678.764 332.326 663.946 332.326 648.494V648.494V268.573H336V196.921Z" fill="#3F3D56"/>
                         <path id="screen" d="M276.417 53.157H248.578C249.858 56.2956 250.347 59.7009 250.001 63.0728C249.655 66.4447 248.485 69.6798 246.594 72.4931C244.703 75.3064 242.15 77.6116 239.158 79.2056C236.167 80.7997 232.83 81.6336 229.44 81.634H107.264C103.874 81.6335 100.537 80.7995 97.5458 79.2054C94.5545 77.6113 92.0012 75.306 90.1106 72.4927C88.2201 69.6794 87.0505 66.4443 86.7047 63.0724C86.359 59.7006 86.8478 56.2955 88.128 53.157H62.128C50.5889 53.157 39.5225 57.7409 31.3632 65.9002C23.2039 74.0595 18.62 85.126 18.62 96.665V648.091C18.6205 659.63 23.2046 670.696 31.3639 678.854C39.5232 687.013 50.5893 691.597 62.128 691.597H276.417C282.13 691.597 287.788 690.472 293.067 688.286C298.346 686.1 303.142 682.896 307.183 678.856C311.223 674.816 314.428 670.02 316.615 664.741C318.802 659.463 319.928 653.805 319.928 648.092V648.091V96.665C319.928 85.126 315.344 74.0595 307.185 65.9002C299.025 57.7409 287.959 53.157 276.42 53.157H276.417Z" fill="white"/>
@@ -321,7 +321,7 @@ const Index = () => {
                             />
                         </div>
                         <h3 className="list-heading" style={{marginBottom: "2vh"}}>Work</h3>
-                        <p className="work-text">Currently looking for work, open to all suitable opportunities. If you are interested to work with me, feel free to contact me <Link activeClass="active" to="contact-me-div" spy={true} smooth={true} offset={0} duration={700}><span style={{cursor: "pointer", textDecoration: "underline"}}>here</span></Link>. In the meantime freelancing, developing cheap but professional web pages to gain as many real-world experience as possible.</p>
+                        <p className="work-text">Currently looking for work, open to all suitable opportunities. If you are interested to work with me, feel free to contact me <Link activeClass="active" to="contact-me-div" spy={true} smooth={true} offset={0} duration={700}><span style={{cursor: "pointer", textDecoration: "underline"}}>here</span></Link>. In the meantime freelancing, developing cheap but professional web pages to gain as much real-world experience as possible.</p>
                     </div>
                 </div>
             </div>

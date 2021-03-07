@@ -37,7 +37,7 @@ body {
 }
 
 .svg {
-    display: block;
+    display: flex;
     margin: auto;
 }
 
