@@ -41,25 +41,18 @@ const Index = () => {
             setSmallIconRight("small-icon-right")
         }
 
-        setTimeout(() => {
-            away()
+        let timer = 4500
+
+        for (let i = 0; i < 10; i++) {
+            //console.log(timer)
             setTimeout(() => {
-                back()
-            }, 4500)
-        }, 4500)
-
-        setTimeout(() => {
-            away()
-            setTimeout(() => {
-                back()
-            }, 4500)
-        }, 13500)
-
-
-
-
-
-
+                away()
+                setTimeout(() => {
+                    back()
+                }, 4500)
+            }, timer)
+            timer += 9000
+        }
 
     }, [])
 
